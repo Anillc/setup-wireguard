@@ -37,7 +37,7 @@ runs:
         readonly minport=51000
         readonly maxport=51999
 
-        ifname="wg$( openssl rand -hex 4 )"
+        ifname="deploy"
         readonly ifname
         port="$( shuf "--input-range=$minport-$maxport" --head-count=1 )"
         readonly port
